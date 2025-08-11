@@ -13,7 +13,7 @@ shapeNames = [
 ]
 phases = [0] * 8
 LFOs = [0.5] * 8
-lastramps = [0] * 8
+lastramps = [0.0] * 8
 randAmps = [1.0] * 8
 randOffsets = [0.0] * 8
 randPhases = [0.0] * 8
@@ -113,7 +113,7 @@ def createDialog():
         0,
         hint="LFO speed range: slower (x1), faster (x8)",
     )
-    form.AddInputCheckbox("Sync", 0, hint="Sync to project clock")
+    form.addInputCheckbox("Sync", 0, hint="Sync to project clock")
     form.endGroup()
     form.addGroup("Amplitude")
     form.addInputKnob("Amplitude", 1, 0, 1, hint="LFO amplitude")
