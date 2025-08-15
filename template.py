@@ -1,7 +1,7 @@
 import flvfx as vfx
 
 
-def createDialog():
+def createDialog() -> vfx.ScriptDialog:
     """Defines script UI. Must return a vfx.ScriptDialog instance."""
     pass
 
