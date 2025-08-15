@@ -56,7 +56,7 @@ class ScriptDialog:
         default: int | float,
         min: int | float,
         max: int | float,
-        hint: str,
+        hint: str = ...,
     ):
         """Adds a float knob."""
 
@@ -66,17 +66,19 @@ class ScriptDialog:
         default: int | float,
         min: int | float,
         max: int | float,
-        hint: str,
+        hint: str = ...,
     ):
         """Adds an integer knob."""
 
-    def addInputCheckbox(self, name: str, default: int | float, hint: str):
+    def addInputCheckbox(self, name: str, default: int | float, hint: str = ...):
         """Adds a checkbox."""
 
-    def addInputCombo(self, name: str, opts: list[str], default_idx: int, hint: str):
+    def addInputCombo(
+        self, name: str, opts: list[str], default_idx: int, hint: str = ...
+    ):
         """Adds a dropdown menu. "opts" is a list of strings."""
 
-    def addInputText(self, name: str, default_text: str, hint: str):
+    def addInputText(self, name: str, default_text: str, hint: str = ...):
         """Adds a text input field."""
 
     def addInputSurface(self):

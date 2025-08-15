@@ -115,14 +115,14 @@ class FormValue(NamedTuple):
 
     @staticmethod
     def setup(form: vfx.ScriptDialog):
-        form.addInputKnobInt("Note Length Min", 100, 1, 1000, "Duration in PPQ")
-        form.addInputKnobInt("Note Length Max", 100, 1, 1000, "Duration in PPQ")
+        form.addInputKnobInt("Note Length Min", 100, 1, 1000, hint="Duration in PPQ")
+        form.addInputKnobInt("Note Length Max", 100, 1, 1000, hint="Duration in PPQ")
         form.addInputKnob(
             "Random Rate",
+            0.001,
+            0.00001,
             0.01,
-            0.0001,
-            1.0,
-            "How quickly the slicing speed changes over time",
+            hint="How quickly the slicing speed changes over time",
         )
 
     @classmethod
