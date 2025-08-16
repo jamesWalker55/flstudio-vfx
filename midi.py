@@ -1,12 +1,13 @@
 # Script written by jisai
 # https://x.com/jisai_w
 
-from dataclasses import dataclass
-from typing import NamedTuple
-import flvfx as vfx
-import random
 import math
+import random
+from dataclasses import dataclass
 from enum import Enum
+from typing import NamedTuple
+
+import flvfx as vfx
 
 
 class Interp(Enum):
