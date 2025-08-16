@@ -4,7 +4,9 @@ def addOutputController(name: str, default: int | float) -> None:
     """Defines an output controller (automation) pin. e.g., ('LFO', 0.0)."""
     ...
 
-def setOutputController(name: str, value: int | float) -> None: ...
+def setOutputController(name: str, value: int | float) -> None:
+    """Sets the value of a defined output controller."""
+    ...
 
 class Voice:
     def __init__(self, existingVoice: Voice | None = None) -> None:
