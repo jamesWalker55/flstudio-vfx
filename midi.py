@@ -185,7 +185,7 @@ class VoiceSlicer:
         self.current_voice.release()
 
 
-# Map from `voice.output` index to Voice and its cycles
+# Map from incoming voice to a voice slicer instance
 active_voices: dict[vfx.Voice, VoiceSlicer] = {}
 
 
